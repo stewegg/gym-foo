@@ -1,2 +1,15 @@
-from gym_foo.envs.foo_env import FooEnv
-from gym_foo.envs.foo_extrahard_env import FooExtraHardEnv
+import gym
+from gym import error, spaces, utils
+from gym.utils import seeding
+
+class FooEnv(gym.Env):
+  metadata = {'render.modes': ['human']}
+
+  def __init__(self):
+    ...
+  def step(self, action):
+    ...
+  def reset(self):
+    ...
+  def render(self, mode='human', close=False):
+    ...
